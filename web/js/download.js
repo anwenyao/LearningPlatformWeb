@@ -2,7 +2,7 @@ window.onload = function(){
 	var arrows = document.getElementsByClassName("icon_arrowR02");
 	var pros = document.getElementsByClassName("pro");
 	var subs = document.getElementsByClassName("sub");
-	var subject = document.getElementById('subject');
+	var filse = document.getElementById('files');
 
 	//点击箭头展开下级菜单
 	for(var i = 0;i < arrows.length;++i){
@@ -16,13 +16,14 @@ window.onload = function(){
 	//初始化pros 和 当前选中显示红色 设置属性data-isSelected
 	ifSelected(pros);
 
-	//页面加载时添加课程
-	addSubs(dk_data[0],'li');
+	//页面加载显示全部的文件
+	addFileItem(dk_file[0]);
 
-	//展示对应专业下的课程
+
+	//展示对应专业下的文件
 	for(var i = 0;i < pros.length;++i){
 		(function(i){
-			var datas = dk_data[i];
+			var datas = dk_file[i];
 			eventUtil.addHandler(pros[i],'click',function(){
 				//将上一次选中的pro设置为#666，并将其data-isSelected属性设为0
 				for(k = 0; k < pros.length;++k){
@@ -30,19 +31,19 @@ window.onload = function(){
 						pros[k].style.color = '#666';
 						pros[k].setAttribute('data-isSelected','0');
 					}
-				}//end
+				}//end of for
 				this.style.color = 'red'; 
 				this.setAttribute('data-isSelected','1');
 
 				//移除先前的sub 从第一个开始
-				subject.innerHTML = '<li class="sub cr">全部</li>';
+				files.innerHTML = '<tr class="th"><td class="first">文档名称</td><td>上传者</td><td>老师</td><td>学期</td><td>下载量</td></tr>';
 				//end
 
 				//根据专业循环显示科目
-				addSubs(datas,'li');
+				addFileItem(datas);
 			});//end of addHandler
 		})(i);
-	}//end
+	}//end of for
 
 
 
@@ -53,19 +54,23 @@ window.onload = function(){
 
 
 	//添加课程
-	//para：数据数组,需要添加的元素的类型
-	function addSubs(data,nodeType){
-		for(var j= 0;j < data.length;++j){
-			var node = document.createElement(nodeType);
-			node.className = 'sub';
-			node.setAttribute('data-isSelected','0')
-			var text = document.createTextNode(data[j]);
-			node.appendChild(text);
-			subject.appendChild(node);
+	//para：数据数组
+	function addFileItem(data){
+		for(var i = 0;i < data.length;++i){
+			var dataSon = data[i];
+			var tr = document.createElement('tr');
+			tr.innerHTML = '<td class = "first"><i class="icon-s icon_'+dataSon.type+'"></i><a href="javascript:;">'+dataSon.name+'</a></td><td><i class="icon-s icon_user"></i><a href="">'+dataSon.author+'</a></td><td>'+dataSon.teacher+'</td><td>'+dataSon.semester+'</td><td>'+dataSon.download+'</td>';
+			files.appendChild(tr);
+		}//end of for
+
+		//添加斑马线效果
+		var tr = document.getElementsByTagName('tr');
+		for(j = 0;j< data.length;++j){
+			if (j%2!=0) {
+				tr[j].style.background = '#f4f9fc';
+			}
 		}
-		//利用了es5没有块级作用域
-		node.className += ' last';
-	}//end
+	}//end of addFileItem
 
 	
 	//展示对应专业下的课程
@@ -77,7 +82,7 @@ window.onload = function(){
 			pros[i].setAttribute('data-isSelected','0');
 		}
 	}
-	}//end
+	}//end of ifSelected
 
 	//展开下级菜单
 	function showNext(){
@@ -99,5 +104,5 @@ window.onload = function(){
 			this.id = '0';
 		}
 		
-	}//end
+	}//end of showNext
 }
