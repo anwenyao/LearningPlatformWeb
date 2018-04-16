@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人颜色拾取</title>
+	<style type="text/css">
+	.color{
+		height:80px;
+		width: 80px;
+		line-height: 80px;
+		float: left;
+		margin: 10px;
+		cursor: pointer;
+	}
+	#inputText{
+		opacity: 0;
+	}
+
+		</style>
+</head>
+<body>
+	<div style="background:#f8f8f8;" class = "color">#f8f8f8</div>
+	<div style="background:#eee;" class = "color">#eee</div>
+	<div style="background:#e6e6e6;" class = "color">#e6e6e6</div>
+	<div style="background:#dbdbdb;" class = "color">#dbdbdb</div>
+	<div style="background:#ccc;" class = "color">#ccc</div>
+	<div style="background:#bfbfbf;" class = "color">#bfbfbf</div>
+	<div style="background:#8a8a8a;" class = "color">#8a8a8a</div>
+	<div style="background:#707070;" class = "color">#707070</div>
+	<div style="background:#666;" class = "color">#666</div>
+	<div style="background:#515151;" class = "color">#515151</div>
+	<div style="background:#2c2c2c;" class = "color">#2c2c2c</div>
+	<div style="background:#2e6da4;" class = "color">#2e6da4</div>
+	<div style="background:#337ab7;" class = "color">#337ab7</div>
+	<div style="background:#4285f4;" class = "color">#4285f4</div>
+	<div style="background:#94c0be;" class = "color">#94c0be</div>
+	<div style="background:#e83c3c;" class = "color">#e83c3c</div>
+	<div style="background:#d12f2f;" class = "color">#d12f2f</div>
+	<div style="background:#ffffe1;" class = "color">#ffffe1</div>
+	<div style="background:#2a579a;" class = "color">#2a579a</div>
+
+	
+	
+
+	<input type="text" id="inputText" value="color"/>
+	
+
+
+
+	<script type="text/javascript">
+		var colors = document.getElementsByClassName("color");
+		var inputText = document.getElementById('inputText');
+
+			for(var i = 0;i < colors.length;++i){
+			colors[i].onclick = function(){
+				inputText.value = this.innerHTML;
+		        var currentFocus = document.activeElement;
+		        inputText.focus();
+		        inputText.setSelectionRange(0, inputText.value.length);
+		        var msg = document.execCommand('copy', true)? 'Copied Successfully':'Copy failed';
+		        currentFocus.focus();  
+		        // alert(msg);//觉得没必要可以注释
+			}	
+		}	
+
+	</script>
+</body>
+</html>

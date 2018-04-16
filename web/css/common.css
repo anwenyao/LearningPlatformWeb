@@ -1,0 +1,301 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	outline: none;
+}
+body{
+	min-width: 700px;
+}
+a,a:hover,a:visited,a:link{
+	text-decoration: none;
+}
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.tr{
+	text-align: right;
+}
+.tl{
+	text-align: left;
+}
+.db{
+	display: block;
+}
+.bold{
+	font-weight: bold;
+}
+.cp{
+	cursor: pointer;
+}
+
+.container .unhide{
+	display: block;
+}
+.bn{
+	border-color: transparent;
+}
+.clear{
+	clear: both;
+}
+
+/*每个页面大图介绍部分*/
+.content{
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+.content .intro{
+	position: absolute;
+	top: 20%;
+	color: white;
+	width: 100%;
+	opacity: 0.8;
+	letter-spacing: 5px;
+}
+.content .intro h1{
+	text-align: center;
+	font-weight: normal;
+	font-size: 54px;
+	line-height: 100px;
+}
+.content .intro p{
+	font-size: 30px;
+}
+.content .content_show{
+	width: 100%;
+	height: 100%;
+}
+li{
+	list-style: none;
+}
+/*实现遮罩效果*/
+.content:before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	background: black;
+}
+/*end*********************/
+footer{
+	margin-top: 50px;
+	height: 40px;
+	line-height: 40px;
+	background: #666;
+	color: white;
+	clear: both;
+}
+
+
+
+/*通用header*/
+header{
+	height: 80px;
+	width: 100%;
+	line-height: 80px;
+	background: white;
+}
+header .logo{
+	height: 100%;
+	width: 150px;
+	float: left;
+	background: url(../images/icon.png)  0px -40px;
+	margin: 0px 20px;
+}
+
+header nav a{
+	display: block;
+	width: 5em;
+	float: left;
+	color: #666;
+	/*line-height: 100px;*/
+}
+header nav a:hover{
+	color:#ccc;
+	transform:translateY(-5px);
+	-webkit-transform:translateY(-5px);
+	-moz-transform:translateY(-5px);
+	-o-transform:translateY(-5px);
+	-ms-transform:translateY(-5px);
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+}
+header nav .homepage{
+	height: 50px;
+	width: 50px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 3px solid #ccc;
+}
+header nav .homepage img{
+	width: 100%;
+	height: 100%;
+}
+header nav .homepage:hover{
+	transform:translateY(0px);
+	-webkit-transform:translateY(0px);
+	-moz-transform:translateY(0px);
+	-o-transform:translateY(0px);
+	-ms-transform:translateY(0px);
+} 
+header nav .homepage img:hover{
+	transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+	-moz-transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);
+	-o-transform: scale(1.2,1.2);
+	opacity: 0.8;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+}
+
+/*end*********************/
+
+.icon-s{
+	vertical-align: middle;
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+	margin-right: 5px;
+}
+.icon_user{
+	background: url(../images/icon.png) -80px 0;
+}
+.icon_msg{
+	background: url(../images/icon.png) -97px 0;
+}
+.icon_star{
+	background: url(../images/icon.png) -114px 0;
+}
+.icon_star:hover{
+	background: url(../images/icon.png) -114px -17px;
+}
+.icon_up{
+	background: url(../images/icon.png) -131px 0;
+}
+.icon_down{
+	background: url(../images/icon.png) -148px 0;
+}
+.icon_edit{
+	background: url(../images/icon.png) -165px 0;
+}
+.icon_praise{
+	background: url(../images/icon.png) -182px 0;
+}
+.icon_praise:hover{
+	background: url(../images/icon.png) -182px -17px;
+}
+.icon_comment{
+	background: url(../images/icon.png) -199px 0;
+}
+.icon_comment:hover{
+	background: url(../images/icon.png) -199px -17px;
+}
+.icon_pic{
+	background: url(../images/icon.png) -216px 0;
+}
+.icon_pic:hover{
+	background: url(../images/icon.png) -216px -17px;
+}
+.icon_emoij{
+	background: url(../images/icon.png) -233px 0;
+}
+.icon_emoij:hover{
+	background: url(../images/icon.png) -233px -17px;
+}
+/*#666*/
+.icon_arrowR01{
+	background: url(../images/icon.png) -250px 0;
+}
+/*.icon_arrowR01:hover{
+	background: url(../images/icon.png) -250px -17px;
+}*/
+/*#fff*/
+.icon_arrowR02{
+	background: url(../images/icon.png) -267px 0;
+}
+/*.icon_arrowR02:hover{
+	background: url(../images/icon.png) -267px -17px;
+}*/
+.icon_word{
+	background: url(../images/icon.png) -284px 0;
+}
+.icon_ppt{
+	background: url(../images/icon.png) -301px 0;
+}
+.icon_pdf{
+	background: url(../images/icon.png) -318px 0;
+}
+
+
+
+/*覆盖效果*/
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,.6);
+	display: none;
+	z-index: 100;
+}
+.mask #close{
+	position: absolute;
+	color:white;
+	top: 0px;
+	right: 5px;
+	cursor: pointer;
+	font-size: 40px;
+	opacity: 0.8;
+}
+/*文本框和按钮效果*/
+.text,.button{
+	width: 85%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 17px;	
+	border-radius: 5px;
+}
+.text{
+	border: 1px solid #ccc;
+	outline: red;
+	text-align: left;		
+	padding-left: 10px;
+	color: #666;
+	background: white;
+	box-sizing: border-box;
+}
+.button{	
+	display: inline-block;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	letter-spacing: 5px;
+	cursor: pointer;
+	color: white;
+	padding: 0 5px;
+	background: #e83c3c;
+	border: 1px solid #e83c3c;
+	
+}
+.button:hover{
+	background: #d12f2f;
+	text-decoration: none;
+}

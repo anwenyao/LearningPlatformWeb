@@ -1,0 +1,256 @@
+body{
+	background: #eee;
+	/*min-width: 700px;*/
+}
+.container{
+	width: 85%;
+	/*height:  600px;*/
+	display: inline-block;
+	border-radius: 10px;
+	padding: 20px 0;
+
+}
+.container .main,
+.container .menu{
+	
+}
+.container .col{
+	float: left;	
+}
+.container .main{
+	
+	width: 100%;
+	
+}
+.container .main_inner{
+	margin-left: 210px;
+	/*test*/
+	/*height: 300px;*/
+	background: white;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.location{
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: right;
+	margin:10px 20px;
+	border-bottom: 1px solid #ccc;
+}
+.location .text{
+	height: 30px;
+	width: 250px;
+	float: left;
+}
+.location .button{	
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	width: 70px;
+	float: left;
+	color: white;
+	font-weight: normal;
+	padding: 0;
+	margin: 0 10px;
+}
+.location .button:hover{
+	color: white;
+}
+.location a{
+	color: #000;
+}
+.location a:hover{
+	color: red;
+}
+.type_container{
+	text-align: left;
+	font-size: 15px;
+	margin: 10px 20px;	
+}
+.type_container ul{
+	padding-left: 50px;
+}
+ul li{
+	color: #666;
+	cursor: pointer;
+	float: left;
+	margin-right: 15px;
+	padding: 3px 0;
+}
+.separate{
+	float: left;
+	width: 100%;
+	height: 1;
+}
+.type_container ul ul{
+	margin-bottom: 50px;
+}
+.main_inner strong{
+	float: left;
+	display: block;
+	padding: 3px 0;
+
+}
+.type_container li:hover{
+	color: red;
+}
+.type_container .cr{
+	color:red;
+}
+.type_container .last{
+	margin-bottom: 10px;
+}
+.file{
+	/*width: 90%;*/
+	padding: 20px 0;
+	border-top:1px solid #ccc;
+	margin: 0 20px;
+	text-align: center;
+}
+.file table{
+	font-size: 15px;
+	width: 90%;
+	text-align:left;
+	/*border: 1px solid #666;*/
+	margin:0 auto;
+}
+table a:hover{
+	text-decoration: underline;
+}
+table,tr,td{
+	text-align: left;
+}
+table tr td{
+	padding: 10px 3px;		
+}
+table tr .first{
+	width: 400px;
+}
+table tr .first+td{
+	width: 100px;
+	font-size: 14px;
+}
+table tr .first+td+td{
+	width: 80px;
+}
+table tr .first+td+td+td{
+	width: 80px;
+}
+table tr .first+td+td+td+td{
+	width: 50px;
+/*	font-size: 14px;
+	color: #ccc;*/
+}
+table tr .first+td i{
+	margin:0 2px;
+	width: 15px;
+	height: 15px;
+	line-height: 20px;
+	/*vertical-align: -2px;*/
+	vertical-align: -2px;
+}
+/*table .th~tr .first{
+	text-align: left;
+	padding-left: 5px;
+}*/
+.file .th{
+	font-size: 14px;
+	color: #666;
+}
+.container .menu{
+ 	margin-left: -100%;
+ 	/*test*/
+ 	width: 200px;
+ 	background: #666;
+
+}
+/*.container .menu ul{
+	
+
+
+}*/
+.container .menu .li {
+	vertical-align: middle;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid white;
+	text-align: left;
+/*	padding-left: 20px;*/
+	/*margin-left: 20px;*/
+	color: white;
+	cursor: default;
+	letter-spacing:10px;
+	margin-bottom: -1px;
+}
+.container .menu .li_bottom{
+	cursor: pointer;
+}
+.container .menu .li  span{
+	margin-left: 10px;
+}
+.container .menu .li i{
+	/*float: right;*/
+	float: right;
+	margin-top:8px;	
+	margin-right: 5px;
+	cursor: pointer;
+}
+.container .menu .li_next{
+	background:white;
+	/*overflow: hidden;*/
+	display: none;
+}
+.container .menu .li_next .li{
+	color: #666;
+	cursor: pointer;
+	border-width:  1px;
+	border-style: dashed;
+	border-color: transparent transparent #ccc transparent; 
+	margin-bottom: -1px;
+	position: relative;
+}
+.container .menu .li_next .li span{
+	margin-left: 30px;
+}
+.container .menu .li_next .li .li_next2{
+	position: absolute;
+	height: auto;
+	width: 250px;
+	background: white;
+	left:198px;
+	top: -20px;
+	display: none;
+	border: 1px solid red;
+	text-align: left;
+	font-size:14px;
+}
+.container .menu .li_next .li .li_next2 a{
+	letter-spacing: 1px;
+	color: #666;
+	float:left;
+	margin-left: 10px;
+}
+.container .menu .li_next .li .li_next2 a:hover{
+	color: red;
+}
+.container .menu .li_next .next2:hover{
+	background:#FFF;
+	border-width: 1px;
+	border-style: solid;
+	border-color: red transparent  red red;
+}
+.container .menu .li_next .next2:hover:after{
+	content: "";
+	height: 36px;
+	width: 2px;
+	background: #fff;
+	position: absolute;
+	left: 198px;
+
+}
+.container .menu .li_next .next2:hover .li_next2{
+	display: block;
+	background:#FFF;
+}
