@@ -122,11 +122,109 @@ body{
 }
 .container .fixed .new{
 	background: url(../images/icon.png)
+
 }
 .container .fixed .toTop{
 	margin-top: 10px;
 	background: url(../images/icon.png) -40px 0px ;
 }
-/*.container .menu li:hover{
-	background: #ccc：
-}*/
+.mask .newExp{
+	padding: 40px 0;
+	width: 70%;
+	min-width: 500px;
+	margin: 150px auto 0 auto;
+	background: #f8f8f8;
+	border:1px solid #ccc;
+	border-radius: 10px;
+}
+
+.mask .newExp textarea{
+	height: 200px;
+	resize: none;
+	margin-top: 10px;
+	/*max-height: 100px;
+	max-width: 85%;
+	min-height: 100px;
+	min-width: 85%;*/
+}
+.mask .newExp .insert {
+	width: 85%;
+	margin: 0 auto;
+	height: 36px;
+	line-height: 36px;
+	color: #666;
+	font-size: 15px;
+	text-align: left;
+}
+.mask .newExp .insert select{
+	width: 55px;
+	height: 22px;
+	line-height: 22px;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.mask .newExp .insert .pic{
+	position: relative;
+}
+.mask .newExp .insert .pic .pa{
+	opacity: 0;
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+}
+.mask .newExp .insert + .insert{
+	height: 1px;
+	position: relative;
+
+}
+.mask .newExp .insert .emoij{
+	position:absolute;
+	width: 290px;
+	height: 200px;
+	background: white;
+	top: 0;
+	left: 0;
+	border: 1px solid #ccc;
+	text-align: left;
+	padding: 0px 10px;
+	margin-right: -10px;
+	display: none;
+}
+.mask .newExp .insert .emoij span{
+	cursor: pointer;
+}
+.mask .newExp .insert .emoij:after{
+	content: "▲";
+	position: absolute;
+	font-size: 15px;
+	color: #fff;
+	left: 0px;
+	top: -22px;
+}
+.mask .newExp .insert .emoij:before{
+	content: "▲";
+	position: absolute;
+	font-size: 15px;
+	color: #ccc;
+	left: 0px;
+	top: -24px;
+}
+
+.mask .newExp .insert i{
+	cursor: pointer;
+}
+.mask .newExp .insert span{
+	margin-right: 5px;
+}
+
+.mask .newExp .insert .button{
+	font-size: 15px;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
