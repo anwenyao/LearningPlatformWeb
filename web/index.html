@@ -9,7 +9,6 @@
 </head>
 <body>
 	<header>
-		<!-- <img src="images/logo02.png"  alt=""> -->
 		<i class = "logo"></i>
 		<nav>
 			<a href="download.html">资料下载</a>
@@ -52,10 +51,13 @@
 		<div class="login">
 			<p>登录</p>
 			<div class="label">用户名</div>
-			<input class = "text" type="text" placeholder="输入用户名"  >
+			<input class = "text" id="user" type="text" placeholder="输入用户名"  >
 			<div class="label">密码</div>
-			<input class = "text" type="text" placeholder="输入密码"  >
-			<a href="" class="button">登录</a>
+			<input class = "text" type="password"  id="psw" placeholder="输入密码"  >
+			<div id="warnning">
+				
+			</div>
+			<input type="button" class="button" id="signin" value="登录" name="">
 			<a href="">忘记密码？</a><a href="">立即注册</a>
 		</div>
 	</div>

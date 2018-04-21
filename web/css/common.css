@@ -41,7 +41,17 @@ a,a:hover,a:visited,a:link{
 .clear{
 	clear: both;
 }
-
+.warnning{
+	display: inline-block;
+	line-height: 15px;
+	height: 15px;
+	width: 15px;
+	background: orange;
+	color: white;
+	vertical-align: baseline;
+	border-radius: 50%;
+	margin-right: 5px;
+}
 /*每个页面大图介绍部分*/
 .content{
 	width: 100%;
