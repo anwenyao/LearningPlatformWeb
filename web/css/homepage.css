@@ -158,7 +158,8 @@ body{
 	margin:20px 20px;
 	font-weight: bold;
 }
-.mask .change div{
+.mask .change label{
+	display: block;
 	margin-top: 10px;
 	text-align: left;
 	margin-left: 7%;

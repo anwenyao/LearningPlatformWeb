@@ -117,19 +117,23 @@
 		<span id="close">×</span>
 		<div class="change">
 			<p>编辑个人资料</p>
-			<div>昵称</div>
+			<label>昵称</label>
 			<input class = "text" type="text"  >
-			<div>性别</div>
-			<select class="text">
-				<option>男</option>
-				<option>女</option>
-			</select>
-			<!-- <input class = "text" type="text"  > -->
-			<div>年龄</div>
+			<label>性别</label>
+
+			<div class="re-select text">
+				<span class="re-selected">性别</span>
+				<ul class="re-options">
+					<li class="re-option">男</li>
+					<li class="re-option">女</li>
+				</ul>
+				<span class="arrow"></span>
+			</div>
+			<label>年龄</label>
 			<input class = "text" type="text"  >
-			<div>学校</div>
+			<label>学校</label>
 			<input class = "text" type="text"  >
-			<div>个性签名</div>
+			<label>个性签名</label>
 			<textarea class = "text"></textarea>
 			<a href="" class="button">确认修改</a>
 		</div>

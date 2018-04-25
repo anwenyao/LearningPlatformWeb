@@ -3,6 +3,7 @@
 	margin: 0;
 	text-align: center;
 	outline: none;
+	font-family: "微软雅黑";
 }
 body{
 	min-width: 700px;
@@ -81,6 +82,42 @@ a,a:hover,a:visited,a:link{
 }
 li{
 	list-style: none;
+}
+/*模拟select*/
+.re-select{
+	position: relative;	
+	display: inline-block;
+}
+
+.re-select .re-options{
+
+	position: absolute;
+	left: 0;
+	/*可修改*/
+	top: 33px;
+	border: 1px solid #ccc;
+	display: none;
+	cursor: default;
+	width: 100%;
+	background: #fff;
+}
+.re-select .re-options .re-option{
+	text-align: left;
+	padding-left: 10px;
+}
+.re-select .re-options .re-option:hover{
+	background: #eee;
+}
+.re-select  .arrow{
+	display: block;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #666 transparent transparent transparent;
+	position: absolute;
+	top: 40%;
+	right: 5px;
 }
 /*实现遮罩效果*/
 .content:before{
@@ -280,7 +317,7 @@ header nav .homepage img:hover{
 	width: 85%;
 	height: 34px;
 	line-height: 34px;
-	font-size: 17px;	
+	font-size: 15px;	
 	border-radius: 5px;
 }
 .text{

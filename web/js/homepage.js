@@ -32,15 +32,12 @@ function homeapage_event(){
 		}
 
 	//设置input的红边框
-	for(var i = 0;i < texts.length;++i){
-		eventUtil.addHandler(texts[i],'focus',function(){
-			this.style.borderColor = "red";
-		});
-		eventUtil.addHandler(texts[i],'blur',function(){
-			this.style.borderColor = "#ccc";
-		});
-	}
+	highlightBorder();
 	//end********************************
+	
+	//模拟select
+	imsSelect();
+	//end
 
 	//点击显示登录界面
 	eventUtil.addHandler(edit,'click',function(){

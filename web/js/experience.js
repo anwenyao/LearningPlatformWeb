@@ -12,7 +12,9 @@ window.onload =function(){
 			ifHide(mask,true);
 		});
 	//end********************************
-
+	//模拟select事件
+	imsSelect();
+	//end********************************
 	//点击关闭界面
 	eventUtil.addHandler(close,'click',function(){
 			ifHide(mask,false);
@@ -30,7 +32,7 @@ window.onload =function(){
 		eventUtil.stopPropagation(event);
 	});
 	//emoij隐藏
-	eventUtil.addHandler(newExp,'click',function(){
+	eventUtil.addHandler(document.body,'click',function(){
 		ifHide(emoij,false);
 		});
 	//end ******************************

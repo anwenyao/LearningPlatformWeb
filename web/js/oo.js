@@ -64,14 +64,48 @@ function ifHide(node,bool){
 
 
   //设置input的红边框
-  function highlightBorder(inputs){
-      for(var i = 0;i < inputs.length;++i){
-        eventUtil.addHandler(inputs[i],'focus',function(){
+  function highlightBorder(){
+
+    var inputs = document.getElementsByTagName('input');
+    //将HTMLCollection转换为数组
+    var hbs = Array.prototype.slice.call(inputs);
+    var textareas = document.getElementsByTagName('textarea');
+    Array.prototype.push.apply(hbs,Array.prototype.slice.call(textareas));
+      for(var i = 0;i < hbs.length;++i){
+        eventUtil.addHandler(hbs[i],'focus',function(){
           this.style.borderColor = "red";
          });
-        eventUtil.addHandler(inputs[i],'blur',function(){
+        eventUtil.addHandler(hbs[i],'blur',function(){
           this.style.borderColor = "#ccc";
         });
       }
   }
   //end********************************
+
+
+  //模拟select
+function imsSelect(){
+  var select = document.getElementsByClassName('re-select')[0];
+  var options = document.getElementsByClassName('re-options')[0];
+  var option = document.getElementsByClassName('re-option');
+  eventUtil.addHandler(select,'click',function(event){
+    event = eventUtil.getEvent(event);
+    eventUtil.stopPropagation(event);
+    if (options.style.display == 'block') {
+      options.style.display = 'none';
+    }else{
+      options.style.display = 'block';
+    }
+  });
+  eventUtil.addHandler(document.body,'click',function(){
+    console.log(select.parentNode);
+    options.style.display = 'none';
+  });
+
+  for(var i = 0;i < option.length;++i){
+    eventUtil.addHandler(option[i],'click',function(){  
+     this.parentNode.parentNode.getElementsByClassName('re-selected')[0].innerHTML = this.innerHTML;
+    });
+  }
+}
+  //end
