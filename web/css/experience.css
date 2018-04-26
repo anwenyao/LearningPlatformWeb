@@ -33,8 +33,7 @@ body{
 .container .main .item .time{
 	width: 15%;
 	height: 80px;
-	/*background: red;*/
-	color: #ccc;
+	color: #666;
 	font-size: 0.9em;
 
 
@@ -54,6 +53,7 @@ body{
 .container .main .item .author{
 	width: 20%;
 	height: 80px;
+	text-align: left;
 }
 .container .main .item .author a{
 	color: #666;

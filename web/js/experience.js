@@ -1,5 +1,5 @@
 window.onload =function(){
-	experience_event();
+	var exps = document.getElementById('exps');
 	var close = document.getElementById('close');
 	var mask = document.getElementsByClassName('mask')[0];
 	var newEx = document.getElementsByClassName('new')[0];
@@ -7,6 +7,32 @@ window.onload =function(){
 	var newExp = document.getElementsByClassName('newExp')[0];
 	var emoij = document.getElementsByClassName('emoij')[0];
 	var texts = document.getElementsByClassName('text');
+	//初始化加载期末的经验内容
+	loadExp(exp_file[0],exps);
+	//点击切换经验类别加载对应数据
+	var subjects = document.getElementsByClassName('subject');
+
+	for(var i = 0;i<subjects.length;++i){
+			(function(i){
+					eventUtil.addHandler(subjects[i],'click',function(){
+					exps.innerHTML = '';
+					//替换部分
+					experience_selected(subjects[i],true);
+					
+					var j = 0;
+					while(j < subjects.length){
+						if(j != i){
+							experience_selected(subjects[j],false);
+						}
+						++j;
+					}
+					console.log(exp_file[i][0]);
+					loadExp(exp_file[i],exps);
+
+				})
+			})(i);
+			
+		}
 	//点击发表界面
 	eventUtil.addHandler(newEx,'click',function(){
 			ifHide(mask,true);
@@ -47,7 +73,6 @@ window.onload =function(){
 	var textarea = document.getElementsByClassName('textarea')[0];
 	for(i = 0;i < emoijs.length;++i){
 		eventUtil.addHandler(emoijs[i],'click',function(){
-			// console.log(textarea.value);
 			textarea.value += this.innerHTML;
 		});
 	}
@@ -57,32 +82,6 @@ window.onload =function(){
 
 }//end of onload
 
-//experience.html
-function experience_event(){
-	var subjects = document.getElementsByClassName('subject');
-	var mains = document.getElementsByClassName('main');
-
-	for(var i = 0;i<subjects.length;++i){
-			(function(i){
-					eventUtil.addHandler(subjects[i],'click',function(){
-					//替换部分
-					experience_selected(subjects[i],true);
-					ifHide(mains[i],true);
-					var j = 0;
-					while(j < subjects.length){
-						if(j != i){
-							experience_selected(subjects[j],false);
-							ifHide(mains[j],false);
-						}
-						++j;
-					}
-
-				})
-			})(i)
-			
-		}
-		
-}// experience.html end
 
 
 
@@ -96,3 +95,15 @@ function experience_selected(node,bool){
     node.style.color = "white";
   }
 }//end
+
+//加载经验
+function loadExp(files,parNode){
+	
+	for(var i = 0;i < files.length;++i){
+		var div = document.createElement('div');
+		div.className = "item";
+		div.innerHTML = "<li class='time'>"+files[i].date+"</li><li class='theme'><a href='detailExp.html' title='"+files[i].topic+"'>"+files[i].topic+"</a></li><li class='author'><i class='icon-s icon_user'></i><a href='detailUser.html'>"+files[i].user+"</a></li></ul>";
+	
+	parNode.appendChild(div);
+	}
+}//end of loadExp

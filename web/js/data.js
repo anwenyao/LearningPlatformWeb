@@ -24,7 +24,7 @@ dk_file[0] = [
 		type:'ppt',
 		name:'流体力学第一章ppt',
 		author:'特色凉菜',
-		teacher:'范冰冰',
+		teacher:'杨云',
 		semester:'2014(下)',
 		download:'545'
 	},
@@ -32,7 +32,7 @@ dk_file[0] = [
 		type:'pdf',
 		name:'采矿学第一章知识点',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'540'
 	},
@@ -40,7 +40,7 @@ dk_file[0] = [
 		type:'ppt',
 		name:'资源勘查期末考试习题',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'538'
 	},
@@ -64,7 +64,7 @@ dk_file[0] = [
 		type:'ppt',
 		name:'流体力学第一章ppt',
 		author:'特色凉菜',
-		teacher:'范冰冰',
+		teacher:'杨云',
 		semester:'2014(下)',
 		download:'525'
 	},
@@ -72,7 +72,7 @@ dk_file[0] = [
 		type:'word',
 		name:'采矿学第二章知识点',
 		author:'红烧牛肉',
-		teacher:'蔡徐坤',
+		teacher:'张剑',
 		semester:'2014(下)',
 		download:'520'
 	},
@@ -80,7 +80,7 @@ dk_file[0] = [
 		type:'ppt',
 		name:'资源勘查期末考试习题',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'510'
 	},
@@ -104,7 +104,7 @@ dk_file[0] = [
 		type:'ppt',
 		name:'流体力学第一章ppt',
 		author:'特色凉菜',
-		teacher:'范冰冰',
+		teacher:'杨云',
 		semester:'2014(下)',
 		download:'462'
 	},
@@ -112,7 +112,7 @@ dk_file[0] = [
 		type:'pdf',
 		name:'采矿学第二章知识点',
 		author:'红烧牛肉',
-		teacher:'蔡徐坤',
+		teacher:'张剑',
 		semester:'2014(下)',
 		download:'435'
 	},
@@ -120,7 +120,7 @@ dk_file[0] = [
 		type:'pdf',
 		name:'资源勘查期末考试习题',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'425'
 	},
@@ -144,7 +144,7 @@ dk_file[0] = [
 		type:'ppt',
 		name:'流体力学第一章ppt',
 		author:'特色凉菜',
-		teacher:'范冰冰',
+		teacher:'杨云',
 		semester:'2014(下)',
 		download:'396'
 	},
@@ -152,7 +152,7 @@ dk_file[0] = [
 		type:'pdf',
 		name:'采矿学第二章知识点',
 		author:'红烧牛肉',
-		teacher:'蔡徐坤',
+		teacher:'张剑',
 		semester:'2014(下)',
 		download:'386'
 	},
@@ -160,7 +160,7 @@ dk_file[0] = [
 		type:'ppt',
 		name:'资源勘查期末考试习题',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'300'
 	}
@@ -187,7 +187,7 @@ dk_file[1] = [
 		type:'ppt',
 		name:'流体力学第一章ppt',
 		author:'特色凉菜',
-		teacher:'范冰冰',
+		teacher:'杨云',
 		semester:'2014(下)',
 		download:'545'
 	},
@@ -195,7 +195,7 @@ dk_file[1] = [
 		type:'pdf',
 		name:'油气开发课后习题答案',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'300'
 	},
@@ -203,7 +203,7 @@ dk_file[1] = [
 		type:'word',
 		name:'流体力学期末考试习题',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'280'
 	},
@@ -251,7 +251,7 @@ dk_file[1] = [
 		type:'pdf',
 		name:'采油工程课后习题答案',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'180'
 	},
@@ -259,7 +259,7 @@ dk_file[1] = [
 		type:'pdf',
 		name:'油田化学课后习题答案',
 		author:'红烧牛肉',
-		teacher:'李晨',
+		teacher:'王兵',
 		semester:'2014(下)',
 		download:'176'
 	}
@@ -916,4 +916,253 @@ dk_file[6] = [
         semester:'2015(上）',
         download:'556'
     }
+];
+
+
+
+
+
+//经验分享
+var exp_file = [];
+//期末
+exp_file[0] = [
+{
+    date:'2018/1/3',
+    topic:'【分享一下我平时不听课期末高数如何逆袭90+，感兴趣的来!】',
+    user:'飞翔的鱼'
+},
+{
+    date:'2017/6/23',
+    topic:'高数到底有什么诀窍？这十点你必须知道',
+    user:'重庆火锅'
+},
+{
+    date:'2017/5/2',
+    topic:'物理怎样考高分？！分享下我自己的经验',
+    user:'马冬梅'
+},
+{
+    date:'2018/1/1',
+    topic:'太惊喜了！这次计算机原理我考试竟然考虑90！',
+    user:'红果果'
+},
+{
+    date:'2018/4/1',
+    topic:'绩点4.0的学长分享一下考试经验！',
+    user:'铁板烧'
+},
+{
+    date:'2018/2/21',
+    topic:'石工考试真的很难吗？分享一下自己的考试经验',
+    user:'肥田'
+},
+{
+    date:'2018/5/1',
+    topic:'期末考试真的很简单！有兴趣的来',
+    user:'AMour'
+},
+{
+    date:'2018/3/13',
+    topic:'高数如何攻克90？教你几招！',
+    user:'红烧猪咪咪'
+},
+{
+    date:'2018/1/1',
+    topic:'期末考试怎样复习最高效？来看看',
+    user:'谢大脚'
+}
+
+];
+
+
+//四级
+exp_file[1] = [
+{
+    date:'2018/1/3',
+    topic:'【四级真的超简单的！分享一下我的四级经验~】',
+    user:'ILoveChina'
+},
+{
+    date:'2017/6/23',
+    topic:'裸考四级500+，需要这样做',
+    user:'红烧牛肉'
+},
+{
+    date:'2017/5/2',
+    topic:'四级听力小诀窍！这几个你一定要记得！',
+    user:'马冬梅'
+},
+{
+    date:'2018/1/1',
+    topic:'分享一下我的四级考试秘笈！感兴趣的来吧',
+    user:'红果果'
+},
+{
+    date:'2018/4/1',
+    topic:'四级听力小诀窍！这几个你一定要记得！',
+    user:'铁板烧'
+},
+{
+    date:'2018/2/21',
+    topic:'四级阅读应该这样做',
+    user:'肥田'
+},
+{
+    date:'2018/5/1',
+    topic:'四级考试需要怎样准备！',
+    user:'AMour'
+},
+{
+    date:'2018/3/13',
+    topic:'高数如何攻克90？教你几招！',
+    user:'红烧猪咪咪'
+},
+{
+    date:'2018/1/1',
+    topic:'四级听力怎样联系！我来告诉你',
+    user:'谢大脚'
+}
+
+];
+//六级
+exp_file[2] = [
+{
+    date:'2018/1/3',
+    topic:'【裸考六级500+有这些小诀窍！】',
+    user:'ILoveChina'
+},
+{
+    date:'2017/6/23',
+    topic:'六级听力训练经验分享',
+    user:'红烧牛肉'
+},
+{
+    date:'2017/5/2',
+    topic:'六级阅读要这样做！进来看看吧',
+    user:'马冬梅'
+},
+{
+    date:'2018/1/1',
+    topic:'六级翻译怎么做才能得高分',
+    user:'红果果'
+},
+{
+    date:'2018/4/1',
+    topic:'六级怎样轻松过！我来分享一下',
+    user:'铁板烧'
+},
+{
+    date:'2018/2/21',
+    topic:'只要你做到这些六级真的超简单',
+    user:'肥田'
+},
+{
+    date:'2018/5/1',
+    topic:'分享一下我的六级考试经验',
+    user:'AMour'
+},
+{
+    date:'2018/3/13',
+    topic:'六级真的一点也不可怕',
+    user:'红烧猪咪咪'
+},
+{
+    date:'2018/1/1',
+    topic:'学长总结一些考六级的主要事项！',
+    user:'谢大脚'
+}
+
+];
+//托福
+exp_file[3] = [
+{
+    date:'2018/1/3',
+    topic:'【呵呵~托福8.5，就是这么容易！戳进来看看吗？】',
+    user:'红烧狮子头'
+},
+{
+    date:'2017/6/23',
+    topic:'托福听力练习诀窍',
+    user:'红烧牛肉'
+},
+{
+    date:'2017/5/2',
+    topic:'托福阅读要这样做！进来看看吧',
+    user:'马冬梅'
+},
+{
+    date:'2018/4/1',
+    topic:'托福怎样轻松过！我来分享一下',
+    user:'铁板烧'
+},
+{
+    date:'2018/2/21',
+    topic:'考托福的十个诀窍',
+    user:'肥田'
+},
+{
+    date:'2018/5/1',
+    topic:'托福考了9分！老看看吗',
+    user:'AMour'
+},
+{
+    date:'2018/3/13',
+    topic:'托福真的一点也不可怕',
+    user:'红烧猪咪咪'
+},
+{
+    date:'2018/1/1',
+    topic:'怎样提高我的托福成绩呢？',
+    user:'谢大脚'
+}
+
+];
+//雅思
+exp_file[4] = [
+{
+    date:'2018/1/3',
+    topic:'还在害怕雅思考试吗？点进来，我教你如何三个月逆袭！',
+    user:'酱香牛肉'
+},
+{
+    date:'2017/6/23',
+    topic:'第三次考雅思了，很害怕',
+    user:'红烧牛肉'
+},
+{
+    date:'2017/5/2',
+    topic:'雅思7分真的一点都不难',
+    user:'马冬梅'
+},
+{
+    date:'2018/1/1',
+    topic:'雅思怎么做才能得高分',
+    user:'红果果'
+},
+{
+    date:'2018/4/1',
+    topic:'雅思怎样轻松过！我来分享一下',
+    user:'铁板烧'
+},
+{
+    date:'2018/2/21',
+    topic:'雅思考试必知小诀窍',
+    user:'肥田'
+},
+{
+    date:'2018/5/1',
+    topic:'学长总结一些考雅思的主要事项！',
+    user:'AMour'
+},
+{
+    date:'2018/3/13',
+    topic:'雅思考试第二次了！',
+    user:'红烧猪咪咪'
+},
+{
+    date:'2018/1/1',
+    topic:'雅思7分真的一点都不难',
+    user:'谢大脚'
+}
+
 ];
