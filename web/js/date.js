@@ -63,11 +63,11 @@ function addLike(type,icon_type,bool){
 				if(!ifLike){
 					like(type[i],child,!ifLike,bool);
 					type[i].id = "1";
-					span.innerHTML = span.innerText - 0 + 1;
+					span.innerHTML = span.innerHTML.replace(' ','') - 0 + 1;
 				}else{
 					like(type[i],child,!ifLike,bool);
 					type[i].id = "0";
-					span.innerHTML = span.innerText - 0 - 1;
+					span.innerHTML = span.innerHTML.replace(' ','') - 0 - 1;
 				}
 			});
 		})(i);
