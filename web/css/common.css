@@ -58,6 +58,7 @@ a,a:hover,a:visited,a:link{
 	width: 100%;
 	height: 650px;
 	position: relative;
+	overflow: hidden;
 }
 .content .intro{
 	position: absolute;

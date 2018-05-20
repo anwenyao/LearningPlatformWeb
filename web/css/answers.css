@@ -1,0 +1,98 @@
+body{
+	width: 100%;
+}
+.container{
+	margin: 50px auto;
+	width: 85%;
+}
+.menu{
+	text-align:left;
+}
+.menu ul{
+	height: 3em;
+	width: 100%;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #ccc;
+}
+.menu li{
+	box-sizing: border-box;
+	float: left;
+	line-height: 3em;
+	padding: 0px 10px;
+	color: #e83c3c;
+	cursor: pointer;
+}
+.menu ul .li-selected{
+	color:black;
+	border:1px solid ;
+	border-color: #ccc #ccc #fff #ccc;
+	border-radius: 5px 5px 0 0 ;
+}
+.menu ul .sleek{
+	float: right;
+}
+.menu .text{
+	height: 30px;
+	width: 250px;
+	line-height: 30px;
+	margin-right: 5px;
+}
+.menu .button{
+	height: 30px;
+	line-height: 30px;
+	font-size: .9em;
+	width: 70px;
+	margin: 0;
+	border: 1px solid #fff;
+}
+.container .problem{
+	padding:20px 5px ;
+	text-align: left;
+	border-bottom: 1px dashed #ccc;
+}
+.container .problem .answers{
+	float: left;
+	display: inline-block;
+	color: #e83c3c;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 1px solid #e83c3c;
+	font-size: .9em;
+	margin-right: 20px;
+}
+.container .problem .pro_des,.info{
+	text-align: left;
+}
+.container .problem .pro_des{
+	color: black;
+}
+.container .problem .info .user,.time{
+	margin-right: 5px;
+	color: #666;
+	font-size: .9em;
+}
+.container .problem a:hover{
+	text-decoration: underline;
+}
+.container .problem:after{
+	content: '';
+	width: 100px;
+	height: 100px;
+	background: green;
+	clear: both;
+}
+
+.container .problem .label{
+	color: #e83c3c;
+	padding:  0 5px;
+	border: 1px solid #e83c3c;
+	font-size: .8em;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.container .problem .label:hover{
+	color: #fff;
+	background: #e83c3c;
+}

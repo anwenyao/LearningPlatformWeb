@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style type="text/css">
-        div{
-            width: 60%;
-            min-width: 300px;
-            height: 100px;
+        .d1,.d2{
+            display: inline-block;
+            height: 50px;
+            width: 100px;
             background: red;
         }
     </style>
 </head>
 <body>
-   <div>q</div>
-
-<script type="text/javascript" src="js/data.js"></script>
-<script type="text/javascript">
-    var div = document.getElementsByTagName('div');
-    var a = Array.prototype.slice.call(div);
-   // var name = Object.prototype.toString.call(document.getElementsByTagName('div'));
-console.log(a);
-</script>
+   <ul>
+       <li>1</li>
+       <li>2</li>
+       <li>
+           <div class="d1"></div>
+           <div class="d2"></div>
+       </li>
+   </ul>
 </body>
 </html>

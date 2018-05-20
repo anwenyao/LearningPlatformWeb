@@ -1166,3 +1166,108 @@ exp_file[4] = [
 }
 
 ];
+
+
+
+//问题
+var problems = [
+    {
+        ans_num:0,
+        user:'西红柿玉米排骨汤',
+        time:'2018/5/15 15:30',
+        pro:'idea通过cdn引入bootstrap的js脚本后怎么让它有代码提示?',
+        ans_label:['计算机','软件']
+    },
+    {
+        ans_num:1,
+        user:'Annnnnnnnnnnnnnnn',
+        time:'2018/5/15 15:41',
+        pro:'web前端有什么兼职平台好做吗?',
+        ans_label:['web','电脑']
+    },
+    {
+        ans_num:2,
+        user:'Tina',
+        time:'2018/5/16 08:13',
+        pro:'六级英语听力一般有什么诀窍呢？我属于那种听得懂但是不回答题的人，真是好头痛啊！！！！',
+        ans_label:['六级','英语']
+    },
+    {
+        ans_num: 1,
+        user:'长生',
+        time:'2018/5/15 09:24',
+        pro:'Why didnt you buy ______ for yourself?A.something B.anything?',
+        ans_label:['英语','四级']
+    },
+    {
+        ans_num: 5,
+        user:'shengjia',
+        time:'2018/5/17 12:31',
+        pro:'Why didnt you buy ______ for yourself?A.something B.anything?',
+        ans_label:['英语','四级']
+    },
+    {
+        ans_num: 1,
+        user:'长生',
+        time:'2018/5/15 09:24',
+        pro:'我有一个问题想请教一下你"或"我有个问题想问一下你 的英语怎么说',
+        ans_label:['英语','六级','语法']
+    },
+    {
+        ans_num: 2,
+        user:'小兔几',
+        time:'2018/5/18 20:06',
+        pro:'[image]20 django怎么在前端查询数据库数据，然后返回json形式数据？',
+        ans_label:['电脑','编程']
+    },
+    {
+        ans_num: 3,
+        user:'回锅肉',
+        time:'2018/4/25 20:20',
+        pro:'请问有人知道i的发音在不同的情况下有什么不同吗？这个问题困扰我很久了。',
+        ans_label:['四级','英语']
+    },
+    {
+        ans_num: 5,
+        user:'shengjia',
+        time:'2018/5/17 12:31',
+        pro:'Why didnt you buy ______ for yourself?A.something B.anything?',
+        ans_label:['英语','四级']
+    },
+    {
+        ans_num: 1,
+        user:'长生',
+        time:'2018/5/15 09:24',
+        pro:'我有一个问题想请教一下你"或"我有个问题想问一下你 的英语怎么说',
+        ans_label:['英语','六级','语法']
+    },
+    {
+        ans_num: 2,
+        user:'小兔几',
+        time:'2018/5/18 20:06',
+        pro:'[image]20 django怎么在前端查询数据库数据，然后返回json形式数据？',
+        ans_label:['电脑','编程']
+    },
+    {
+        ans_num: 1,
+        user:'长生',
+        time:'2018/5/15 09:24',
+        pro:'我有一个问题想请教一下你"或"我有个问题想问一下你 的英语怎么说',
+        ans_label:['英语','六级','语法']
+    },
+    {
+        ans_num: 2,
+        user:'小兔几',
+        time:'2018/5/18 20:06',
+        pro:'[image]20 django怎么在前端查询数据库数据，然后返回json形式数据？',
+        ans_label:['电脑','编程']
+    },
+    {
+        ans_num: 3,
+        user:'回锅肉',
+        time:'2018/4/25 20:20',
+        pro:'请问有人知道i的发音在不同的情况下有什么不同吗？这个问题困扰我很久了。',
+        ans_label:['四级','英语']
+    }
+
+];
